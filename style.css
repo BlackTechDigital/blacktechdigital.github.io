@@ -2618,3 +2618,142 @@ textarea:focus-visible {
         transform: none;
     }
 }
+
+/* ==========================================
+   BLACK TECH — PREMIUM MOTION 2.0
+   Animações e efeitos profissionais
+   ========================================== */
+
+/* Rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Seleção de texto azul */
+::selection {
+    background: #258cff;
+    color: #ffffff;
+}
+
+/* Transições suaves nos elementos interativos */
+a,
+button,
+.btn,
+.card,
+.service-card,
+.project-card,
+input,
+textarea {
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Brilho premium nos botões */
+button:hover,
+.btn:hover {
+    box-shadow: 0 0 24px rgba(37, 140, 255, 0.28);
+    transform: translateY(-2px);
+}
+
+/* Elevação dos cartões */
+.service-card:hover,
+.project-card:hover,
+.card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(37, 140, 255, 0.65);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Brilho sutil nos links */
+a:hover {
+    color: #69c3ff;
+}
+
+/* Foco visível para teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #69c3ff;
+    outline-offset: 4px;
+}
+
+/* Animação suave na entrada do conteúdo principal */
+@keyframes btFadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1,
+.hero p,
+.hero .btn,
+.hero .button {
+    animation: btFadeUp 0.8s ease both;
+}
+
+.hero p {
+    animation-delay: 0.12s;
+}
+
+.hero .btn,
+.hero .button {
+    animation-delay: 0.24s;
+}
+
+/* Fundo com brilho azul discreto */
+.hero {
+    position: relative;
+    isolation: isolate;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(37, 140, 255, 0.09);
+    filter: blur(90px);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Respeita quem prefere menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    .service-card:hover,
+    .project-card:hover,
+    .card:hover {
+        transform: translateY(-3px);
+    }
+
+    .hero::before {
+        width: 200px;
+        height: 200px;
+    }
+}
