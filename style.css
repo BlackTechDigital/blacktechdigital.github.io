@@ -2324,3 +2324,297 @@ article,
         width: 100%;
     }
 }
+
+/* =========================================================
+   BLACK TECH 2.0 — ACABAMENTO PREMIUM
+   Adicione este bloco ao final do style.css
+   ========================================================= */
+
+:root {
+    --blue: #258cff;
+    --blue-light: #69c3ff;
+    --blue-soft: rgba(37, 140, 255, 0.10);
+    --border: #202936;
+    --radius-lg: 20px;
+}
+
+/* Leitura e acabamento geral */
+
+body {
+    font-family: Inter, "Segoe UI", Arial, sans-serif;
+    letter-spacing: 0.1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+section {
+    isolation: isolate;
+}
+
+section h2,
+.servico-card h3,
+.projeto-conteudo h3 {
+    text-wrap: balance;
+}
+
+section p {
+    text-wrap: pretty;
+}
+
+/* Cabeçalho elegante */
+
+header {
+    background: rgba(5, 6, 8, 0.88);
+    border-bottom-color: rgba(105, 195, 255, 0.10);
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    transition: filter 0.3s ease;
+}
+
+header h1:hover {
+    filter: drop-shadow(0 0 12px rgba(77, 184, 255, 0.35));
+}
+
+nav a {
+    padding: 8px 0;
+}
+
+/* Início com mais profundidade */
+
+#inicio {
+    background:
+        radial-gradient(
+            ellipse at 78% 35%,
+            rgba(37, 140, 255, 0.17),
+            transparent 34%
+        ),
+        radial-gradient(
+            ellipse at 15% 90%,
+            rgba(37, 80, 180, 0.10),
+            transparent 38%
+        ),
+        var(--bg-main);
+}
+
+#inicio h2 {
+    line-height: 1.04;
+    letter-spacing: -3.5px;
+    text-wrap: balance;
+}
+
+#inicio h2 span {
+    background: linear-gradient(
+        100deg,
+        #ffffff 5%,
+        #9bd7ff 42%,
+        #258cff 85%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#inicio p {
+    max-width: 640px;
+    color: #b0bac7;
+}
+
+.hero-tag,
+.section-tag {
+    box-shadow: inset 0 0 18px rgba(37, 140, 255, 0.04);
+}
+
+/* Botões mais refinados */
+
+.hero-btn,
+.whatsapp-btn,
+.contato-submit {
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease;
+}
+
+.hero-btn.primary,
+.contato-submit {
+    background: linear-gradient(110deg, #ffffff, #dceeff);
+}
+
+.hero-btn.primary:hover,
+.contato-submit:hover {
+    box-shadow: 0 12px 35px rgba(37, 140, 255, 0.20);
+}
+
+.hero-btn.secondary {
+    border-color: #303d4d;
+}
+
+.hero-btn.secondary:hover {
+    border-color: var(--blue-light);
+}
+
+/* Cartões de serviços */
+
+.servico-card {
+    border-color: #222c39;
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(37, 140, 255, 0.055),
+            transparent 38%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.035),
+            rgba(255, 255, 255, 0.008)
+        );
+}
+
+.servico-card.destaque {
+    border-color: rgba(37, 140, 255, 0.42);
+    box-shadow: inset 0 1px rgba(105, 195, 255, 0.08);
+}
+
+.servico-icon,
+.contato-card-icon {
+    box-shadow:
+        inset 0 0 20px rgba(37, 140, 255, 0.045),
+        0 0 22px rgba(37, 140, 255, 0.025);
+}
+
+.servico-card:hover,
+.projeto:hover {
+    border-color: rgba(77, 184, 255, 0.52);
+}
+
+/* Projetos com contraste mais sofisticado */
+
+.projeto {
+    background: linear-gradient(
+        160deg,
+        #0c1016,
+        #07090d
+    );
+}
+
+.projeto-imagem {
+    border-bottom-color: #252e3a;
+}
+
+.projeto-logo {
+    text-shadow:
+        0 0 25px rgba(255, 255, 255, 0.12),
+        0 5px 25px rgba(0, 0, 0, 0.7);
+}
+
+.projeto-tags span {
+    border-color: #283342;
+    color: #9aa8b9;
+}
+
+/* Seção Sobre */
+
+.sobre-card {
+    border-color: rgba(105, 195, 255, 0.20);
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(37, 140, 255, 0.07),
+            transparent 45%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.065),
+            rgba(255, 255, 255, 0.012)
+        );
+}
+
+.sobre-logo {
+    box-shadow:
+        0 0 65px rgba(37, 140, 255, 0.16),
+        inset 0 0 30px rgba(37, 140, 255, 0.10);
+}
+
+.diferencial {
+    border-color: #222c39;
+}
+
+/* Contato e formulário */
+
+.contato-form-area {
+    border-color: #273342;
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(37, 140, 255, 0.055),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.035),
+            rgba(255, 255, 255, 0.008)
+        );
+}
+
+.form-group input,
+.form-group textarea {
+    border-color: #2b3542;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--blue-light);
+    box-shadow: 0 0 0 3px rgba(37, 140, 255, 0.11);
+}
+
+/* Seleção e acessibilidade */
+
+::selection {
+    background: rgba(37, 140, 255, 0.35);
+    color: #ffffff;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline-color: var(--blue-light);
+    outline-offset: 4px;
+}
+
+/* Animações respeitam quem prefere menos movimento */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Ajustes para telas pequenas */
+
+@media (max-width: 700px) {
+    #inicio h2 {
+        letter-spacing: -2px;
+        line-height: 1.08;
+    }
+
+    .servico-card,
+    .projeto,
+    .contato-form-area {
+        border-radius: 16px;
+    }
+}
+
+@media (hover: none) {
+    .servico-card:hover,
+    .projeto:hover,
+    .contato-card:hover {
+        transform: none;
+    }
+}
