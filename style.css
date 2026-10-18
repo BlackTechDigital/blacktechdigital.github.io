@@ -2757,3 +2757,10 @@ textarea:focus-visible {
         height: 200px;
     }
 }
+/* BLACK TECH — PORTFÓLIO ATUALIZADO */
+.projeto-imagem.hidrau {background:radial-gradient(circle at 50% 40%,#a82d38,#1b1018 65%,#08090d)}
+.projeto-imagem.ginato {background:radial-gradient(circle at 50% 40%,#166ac6,#0a2346 65%,#060b17)}
+.projeto-imagem.martelli {background:radial-gradient(circle at 50% 40%,#75543b,#21180f 65%,#090807)}
+.projeto-imagem.fabio {background:radial-gradient(circle at 50% 40%,#bb8b20,#302715 65%,#0a0b0d)}
+.projeto-logo {text-align:center;padding:0 18px;font-size:clamp(18px,2.3vw,27px);overflow-wrap:anywhere}
+.projeto-indisponivel {color:#aeb8c4;cursor:default}
